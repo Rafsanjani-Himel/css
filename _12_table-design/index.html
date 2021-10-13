@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Table Design using css</title>
+		<style>
+			caption{
+				color:tomato;
+			}
+			table{
+				border:2px solid black;
+				border-collapse:collapse;
+				width:100%;
+			}
+			th,td{
+				border:2px solid black;
+				padding:5px;
+				text-align:center;
+
+			}
+			th{
+				background-color:darkgreen;
+				color:white;
+				height:30px;
+				vertical-align:bottom;
+			}
+			tr:nth-child(even){
+				background-color:gray;
+			}
+			tr:nth-child(odd){
+				background-color:red;
+				color:white;
+			}
+			tr:hover{
+				background-color:orange;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<table>
+			<caption><h2>Students Detail</h2></caption>
+			<tr>
+				<th>ID</th>
+				<th>Name</th>
+				<th>GPA</th>
+				<th>Bio</th>
+				<th>Phone</th>
+			</tr>
+			
+			<tr>
+				<td>101</td>
+				<td>Rahim</td>
+				<td>4.5</td>
+				<td>Rahim is a good boy.He is expert in website designing and now works in dhaka.</td>
+				<td>10497436123</td>
+			</tr>
+			
+			<tr>
+				<td>102</td>
+				<td>Karim</td>
+				<td>3.5</td>
+				<td>Karim is a good boy.He is expert in website designing and now works in dhaka.</td>
+				<td>104397343361</td>
+			</tr>
+			
+			<tr>
+				<td>103</td>
+				<td>Rahat</td>
+				<td>4.5</td>
+				<td>Rahat is a good boy.He is expert in website designing and now works in dhaka.</td>
+				<td>104974361</td>
+			</tr>
+			
+			<tr>
+				<td>104</td>
+				<td>Rafit</td>
+				<td>2.5</td>
+				<td>Rafit is a good boy.He is expert in website designing and now works in dhaka.</td>
+				<td>1049474361</td>
+			</tr>
+			<tr>
+				<td>105</td>
+				<td>Akram</td>
+				<td>4.5</td>
+				<td>Akram is a good boy.He is expert in website designing and now works in dhaka.</td>
+				<td>104974361</td>
+			</tr>
+	
+	
+		</table>
+	</body>
+</html>

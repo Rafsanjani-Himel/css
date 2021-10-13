@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>style-list</title>
+	<link rel="stylesheet" href="../fontawesome-free-5.15.3-web/css/all.min.css">
+	<link rel="stylesheet" href="/fontawesome-free-5.15.3-web/css/all.min.css">
+	<style>
+		.course-list{
+			background-color: green;
+			padding: 20px 10px;
+			color: white;
+		}
+		.course-list ul{
+			list-style-type: none;
+			list-style-position: inside;
+		}
+		.course-list ul li{
+			padding: 10px;
+
+		}
+		.course-list ul li::before{
+			content: '\f058';
+			font-family: 'Font Awesome 5 Free';
+			display: inline-block;
+			margin: 10px 5px;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="course-list">
+		<ul>
+			<li>HTML</li>
+			<li>CSS</li>
+			<li>JavaScript</li>
+			<li>Bootstrap</li>
+		</ul>
+	</div>
+	
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Pseudo class and element</title>
+		<style>
+		
+			#fullName{
+				width:50%;
+				padding:20px;
+				
+			}
+			#fullName:focus{
+				width:100%;
+				color:white;
+				background-color:orange;
+				
+			}
+			#fullName::placeholder{
+				color:brown;
+			}
+			
+			a.home:hover{
+				background-color:orange;
+				text-decoration:none;
+				color:white;
+			}
+			table{
+				border:2px solid red;
+				border-collapse:collapse;
+			}
+			th,td{
+				border:2px solid red;
+			}
+			th{	
+				background-color:green;
+				color:white;
+				padding:10px;
+				text-align:center;
+				font-weight:bold;
+			}
+			tr:hover{
+			
+				background-color:orange;
+				color:white;
+			}
+			tr:nth-child(odd){
+				background-color:black;
+				color:white;
+
+			}
+			tr:nth-child(even){
+				background-color:red;
+				color:white;
+			}		
+			.country-para::after{		
+				content:">";
+			}
+			.country-para::before{		
+				content:">";
+			}
+			
+			::selection{
+				background-color:black;
+				color:white;
+				
+			}
+		</style>
+		
+	</head> 
+	<body>
+			<input type="text" name="fullName" id="fullName" placeholder="Enter your fullName here">
+		<br>
+			<a href="#home" class="home">Home</a>
+			<a href="#tutorial">Tutorial</a>
+			<p>&gt;Bangladesh is a free country.Bangladesh is a free country.Bangladesh is a free country.Bangladesh is a free country.Bangladesh is a free country.Bangladesh is a free country.Bangladesh is a free country.</p>
+		<br>
+		<table>
+			<tr>
+				<th>Name</th>
+				<th>Id</th>
+				<th>village</th>
+			</tr>
+			<tr>
+				<td>Rahim</td>
+				<td>101</td>
+				<td>jallara</td>
+			</tr>
+			<tr>
+				<td>Rahim</td>
+				<td>101</td>
+				<td>jallara</td>
+			</tr>
+			<tr>
+				<td>Rahim</td>
+				<td>101</td>
+				<td>jallara</td>
+			</tr>
+		</table>
+		
+		<!-- for pseudo elements-->
+		<p class="country-para">I love my country.I live in peace here.I love my country.I live in peace here.I love my country.I live in peace here.I love my country.I live in peace here.I love my country.I live in peace here.I love my country.I live in peace here.I love my country.I live in peace here.</p>
+		
+	</body>
+
+</html>

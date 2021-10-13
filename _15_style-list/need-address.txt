@@ -1,0 +1,4 @@
+	cdnjs.com.libraries/font-awesome   add first cdn in head tag after title tag.
+
+fontawesome.com>icon>search icon>select>copy unicode value like f058 >::before>content:'\f058'>font-family:"font Awesome 5 free">font-weight:bold>display:inline-block>margin:10px 5px;>font-size:1.5rem;>color:red;
+

@@ -1,0 +1,3 @@
+pseudo class works on whole tag.like a,p,all heading and so on;example:hover,focus,nth-child(odd/even) and so on
+
+But pseudo element is not work in whole element.it works on first letter,last letter,first alphabet,first line etc. 

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS variables</title>
+    <style>
+        :root{
+            --primary-color:red;
+            --secondary-color:black;
+            
+        }
+        h2{
+            background-color: var(--primary-color);
+        }
+        p{
+            color:var(--secondary-color);
+        }
+
+        
+        @media screen and(max-width: 700px){
+            :root{
+            --primary-color:orange;
+            --secondary-color:brown;
+            
+        }
+        } 
+    </style>
+</head>
+<body>
+    <h2>Bangladesh</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, saepe cum quae, expedita facilis qui voluptas eius quasi a dolor similique odio delectus provident doloribus rerum minima dolore? Minus, consequatur.</p>
+</body>
+</html>

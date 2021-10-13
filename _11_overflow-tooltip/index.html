@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+	<head>
+	<meta charset="utf-8">
+	<title>overflow and tooltip</title>
+	<style>
+		.section1{
+			max-width:400px;
+			height:200px;
+			background-color:blue;
+			border:2px solid red;
+			overflow:auto;
+		}
+		.tooltip{
+			position:relative;
+		}
+		
+		.tooltip .tooltip-text{
+			background-color:green;
+			color:white;
+			width:150px;
+			padding:10px;
+			border-radius:10px;
+			position:absolute;
+			top:30px;
+			left:30px;
+			visibility:hidden;
+			z-index:1;
+		}
+		
+		.tooltip:hover .tooltip-text{
+		
+			visibility:visible;
+		}
+	</style>
+		
+	</head>
+	
+	<body>
+	
+	<div class="section1"> 
+		<h1>Bangladesh</h1>
+		<p>Bangladesh is a free country and we love her a lotBangladesh is a free country and we love her a lotBangladesh is a free country and we love her a lotBangladesh is a free country and we love her a lotBangladesh is a free country and we love her a lotBangladesh is a free country and we love her a lot.Bangladesh is a free country and we love her a lot.Bangladesh is a free country and we love her a lot.Bangladesh is a free country and we love her a lot.Bangladesh is a free country and we love her a lot.Bangladesh is a free country and we love her a lot.</p>
+	</div>
+	<br>
+	<br>
+	<br><br><br>
+					<!--Tooltip-->
+		<a href="http://www.facebook.com" class="tooltip">Facebook
+		<span class="tooltip-text">Facebook is a social media</span>
+		</a>
+	</body>
+	
+</html>

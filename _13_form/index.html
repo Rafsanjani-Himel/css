@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>form design</title>
+		<style>
+		input[type=text]{
+			width:100%;
+			padding:10px 20px;
+			font-size:1rem;
+			margin:15px 20px;
+			box-sizing:border-box;
+		}
+		
+		#search{
+			background-image:url("images/search1.png");
+			background-repeat:no-repeat;
+			background-position:8px 12px;
+			font-size:1.5rem;
+			padding:15px 40px;
+			width:200px;
+			transition: width .3s ease-in-out;
+			
+		}
+		#search:focus{
+			width:100%;
+			background-color:orange;
+		}
+		
+		select{
+			width:50%;
+			padding:15px;
+			border:none;
+			background-color:tomato;
+			color:white;
+			border-radius:15px;
+		}
+		
+		
+		
+		textarea{
+			resize:none;
+			border:2px solid red;
+			border-radius:10px;
+			width:40%;
+			padding:20px;
+		
+		}
+		input[type="button"] ,input[type="reset"]{
+			border:none;
+			background-color:red;
+			color:white;
+			padding:10px;
+			margin-left:25px;
+			width:100px;
+			cursor:pointer;
+		}
+		
+			
+		</style>
+	</head>
+	
+	<body>
+	
+		
+	<form>
+		<label for="firstName">FirstName:</label>
+		<input type="text" name="firstName" id="firstName" placeholder="enter your firstName here">
+	<br>
+	<label for="search">Search:</label>
+		<input type="text" name="search" id="search" placeholder=" Search" ><br>
+		
+		<div>
+		<h2>Name of the courses:</h2>
+		<select name="course-name" id="course-name">
+		
+		
+			<option value="html">HTML</option>
+			<option value="css">CSS</option>
+			<option value="javaScript">JavaScript</option>
+			<option value="bootstrap">Bootstrap</option>
+		</select>
+		</div>
+		<br><br>
+		<textarea cols="30" rows="10">Write your comments here!</textarea><br>
+		
+		<input type="button" value="Submit">
+		<input type="reset" value="Reset">
+	</form>
+	
+	</body>
+</html>
